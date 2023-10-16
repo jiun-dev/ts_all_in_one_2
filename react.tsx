@@ -1,18 +1,18 @@
 import * as React from "react";
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef, useEffect, FormEvent } from "react";
 
 const WordRelay = () => {
   const [word, setWord] = useState("제로초");
   const [value, setValue] = useState("");
   const [result, setResult] = useState("");
-  const inputEl = useRef(null);
+  const inputEl = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     console.log("useEffect");
   }, []);
 
   const onSubmitForm = useCallback(
-    (e) => {
+    (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       const input = inputEl.current;
       if (word[word.length - 1] === value[0]) {
@@ -33,7 +33,7 @@ const WordRelay = () => {
     [word, value]
   );
 
-  const onChange = useCallback((e) => {
+  const onChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.currentTarget.value);
   }, []);
 

@@ -20,8 +20,15 @@ setWord((prev) => {
 - 원시값에도 Type을 부여하고 싶을때 브랜딩 기법을 활용하면 좋다
   - ex) 달러,유로,원
 
-### useEffect분석
-
 ### useCallback
 
 - React18 버전에서는 useCallback이 Function타입으로 변하면서 매개변수랑 리턴값이 타이밍이 되어있지 않다.
+- e: FormEvent<HTMLFormElement>
+- e: React.ChangeEvent<HTMLInputElement>
+
+### useRef
+
+- mutableRef는 값을 컴포넌트에서 저장하고 있는 용도.
+- jsx에 연결할 용도로 ref를 만든 경우 제너릭을 채워주어야 한다.
+
+### useEffect분석
