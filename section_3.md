@@ -34,3 +34,10 @@ setWord((prev) => {
 ### useEffect분석
 
 ### class컴포넌트 타이핑
+
+- ReactNode는 ReactElement보다 상위 타입
+- 클래스 컴포넌트는 return "string" 같은 형태도 가능하다
+
+### q&a
+
+- bivarianceHack 헷갈릴수 있지만 객체를 만들고 객체 안에서 타입을 바로 꺼낼수 있는 문법을 활용함
