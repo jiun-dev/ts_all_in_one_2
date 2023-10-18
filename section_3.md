@@ -32,3 +32,5 @@ setWord((prev) => {
 - jsx에 연결할 용도로 ref를 만든 경우 제너릭을 채워주어야 한다.
 
 ### useEffect분석
+
+### class컴포넌트 타이핑
