@@ -11,3 +11,13 @@
 ## reducer는 상태를 바꾸는 규칙
 
 - 함수 매개변수state, action
+- typeof state가 가장 좋지만 null같은 경우 때문에 안되는 경우 state를 따로 type으로 만들어야함
+
+## middleware
+
+- action이 store에 전달되기 전에 역할을 한다.
+
+## thunk middleware
+
+- action은 원래 객체꼴이다. action을 함수형태로 만들어줄수있다.
+  - 비동기를 지원할 수 있게된다.
