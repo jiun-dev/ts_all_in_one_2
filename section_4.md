@@ -25,3 +25,4 @@
 # react-redux
 
 - return값은 타입추론이 되기 때문에 state에만 RootState를 넣어주는게 코드양을 줄일 수 있다.
+- store 연결 꼭 하기
